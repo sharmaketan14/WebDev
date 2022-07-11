@@ -1,0 +1,14 @@
+<article class="post-item">
+  <h2><%= post.title %></h2>
+  <% for (const author1 of authors) { %>
+    <% if(post.author == author1._id) { %>
+      <p class="post-item-author">By <%= author1.Name %></p>
+    <% } %>
+  <% } %>
+  <p><%= post.summary %></p>
+  <div class="post-actions">
+    <a class="btn btn-alt" href="/posts/<%= post._id %>/delete">Delete Post</a>
+    <a href="/posts/<%= post._id %>/edit">Edit Post</a>
+    <a class="btn" href="/posts/<%= post._id %>">View Post</a>
+  </div>
+</article>

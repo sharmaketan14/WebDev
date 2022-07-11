@@ -1,0 +1,185 @@
+body{
+    margin: 0px;
+    background-color: rgb(44,41,38);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background-color: rgb(29,26,24);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+#logo{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(238,264,80);
+    font-size:  2rem;
+    padding: 8px;
+}
+
+#real{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#real li{
+    color: rgb(185,131,31);
+    margin: 0px 15px;
+    font-family: "Quicksand";
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#real li:hover{
+    color: rgb(238,264,80);
+}
+
+#real ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#side_drawer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29,26,27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side_drawer:target{
+    display: block;
+}
+
+#side_drawer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side_drawer ul li{
+    color: white;
+    margin: 7px 0px;
+    font-family: "Quicksand";
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#side_drawer header{
+    background-color: rgb(29,26,24);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 20px;
+}
+
+#hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+}
+
+#hamburger span{
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 3px;
+}
+
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    color:rgb(185,131,31);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    object-fit: cover;
+}
+
+h2{
+    margin: 0px;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+}
+
+main ul li a{
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+main ul li a:hover{
+    background-color: orange;
+    color: white;
+}
+
+main ul{
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+main ul li{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.items{
+    background-color: sandybrown;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: visible;
+}
+
+@media (max-width: 1080px) {
+    main ul{
+        grid-template-columns: 100%;
+    } 
+    #real{
+        display: none;
+    }
+    #hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #hamburger span{
+        display: block;
+        background-color: white;
+        width: 100%;
+        height: 3px;
+    }
+    main h1{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,88 @@
+#Hero{
+    height: 800px;
+    background-image: url(ocean.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#hero-content{
+    width: 900px;
+    background-color: rgba(51,47,47,0.8);
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+    border-radius: 5px;
+    text-align: center ;
+    padding: 50px 0px;
+    margin: 0px auto;
+    position: relative;
+    top: 200px;
+}
+
+#hero-content h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
+}
+
+#hero-content p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+#hero-content a{
+    text-decoration: none;
+    background-color: rgb(255,251,0);
+    padding: 12px 24px;
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+}
+
+#hero-content a:hover{
+    background-color: rgb(255,238,0);
+}
+#Highlights{
+    background: linear-gradient(45deg,rgb(220,224,236), rgb(206, 211, 226));
+    padding: 10px 20px;
+}
+#Highlights h2{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.Destinations img{
+    width: 360px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+    padding: 1px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+#Destinations{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
+}
+li p{
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#place_names{
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+

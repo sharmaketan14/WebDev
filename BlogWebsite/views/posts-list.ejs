@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('includes/head', { title: 'All Posts' }) %>
+  <link rel="stylesheet" href="/styles/posts.css">
+</head>
+
+<body>
+  <%- include('includes/header') %>
+  <main id="all-posts">
+    <h1>All Posts</h1>
+      <% if ((!posts || len1 === 0) && (!documents || len2 === 0)){ %>
+        <h2>Sorry! No posts Available...</h2>
+      <% } else { %>
+        <ol id="posts-list">
+        <% for (const post of posts) { %>
+          <li>
+            <%- include('includes/post-item', {post:post}) %>
+          </li>
+        <% } %>
+        <% for (const post1 of documents) { %>
+          <li>
+            <%- include('includes/post-item1', {post:post1, authors:authors}) %>
+          </li>
+        <% } %>
+        </ol>
+      <% } %>
+  </main> 
+</body>
+
+</html>
